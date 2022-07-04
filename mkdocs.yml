@@ -1,5 +1,5 @@
 # Basic information about the project and repo
-site_name: MSP2CSP Docs
+site_name: New Docs
 repo_url: https://github.com/MSP2CSPadmin/docs
 repo_name: MSP2CSPadmin/docs
 edit_uri: edit/main/docs/
@@ -7,7 +7,11 @@ edit_uri: edit/main/docs/
 # Customising the mkdocs-material theme
 theme:
   name: material
+  logo: assets/logo.png
   custom_dir: overrides
+  font:
+    text: Inter
+    code: Open Sans
   palette:
 
     # Palette toggle for automatic mode
@@ -19,8 +23,8 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default 
-      primary: light blue
-      accent: pink
+      primary: red
+      accent: green
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -67,6 +71,7 @@ nav:
       - Robotics: extracurricular/coding/robotics.md
       - Programming: extracurricular/coding/programming.md
   - Contributing: contributing.md
+  - New Page: page.md
 
     
 # Add more features to the look of the page
